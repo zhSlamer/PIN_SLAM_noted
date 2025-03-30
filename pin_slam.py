@@ -127,6 +127,7 @@ def run_pin_slam(
     if dataset_name:
         set_dataset_path(config, dataset_name, sequence_name)
         
+    # 命令行参数 例如 pin_slam.py -i <data-dir>:open_file_folder: -vsm
     argv = sys.argv
     run_path = setup_experiment(config, argv)
     print("[bold green]PIN-SLAM starts[/bold green]")
